@@ -16,7 +16,7 @@ def create_app():
 
     with app.app_context():
         # Imports
-        from . import routes
+        from core import routes
 
         # Create tables for our models
         db.create_all()
